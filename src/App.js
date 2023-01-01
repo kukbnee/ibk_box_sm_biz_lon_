@@ -6,7 +6,7 @@ import CstInfoAdd from './pages/1_guide/CstInfoAdd.js';
 import PreGuide from './pages/5_new/PreGuide.js';
 import JudgeStep1 from './pages/2_judge/JudgeStep1.js';
 import JudgeStep2 from './pages/2_judge/JudgeStep2.js';
-import JudgeStep3 from './pages/5_new/JudgeStep3.js';
+import JudgeStep3 from './pages/2_judge/JudgeStep3.js';
 import CsInfoAgree from './pages/2_judge/CsInfoAgree.js';
 import CsInfoAgree2 from './pages/2_judge/CsInfoAgree2';
 import DocCollectList from './pages/2_judge/DocCollectList';

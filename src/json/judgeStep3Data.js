@@ -6,7 +6,8 @@ let data = [
   contents: "-고유식별정보 수집.이용.제공.조회.동의\n -개인(신용)정보 수집.이용.제공.조회 동의",
   type : "text",
   agree: "동의",
-  pdfvalue: "/fup/customer/form/2017110617593821483973066352935.pdf"
+  //pdfvalue: "/fup/customer/form/2017110617593821483973066352935.pdf"
+  pdfvalue: "ibkagrm1.pdf"
 
 },
 {
@@ -34,7 +35,8 @@ title : "필수 개인(신용)정보 수집.이용.제공.조회 동의서[신�
 contents: "-고유식별정보 및 개인(신용)정보수집.이용.제공.조회.동의\n -신용등급 하락가능성 및 고객권리확인 동의",
 type : "text",
 agree: "동의",
-pdfvalue: "/fup/customer/form/2022053115131329259593606625324.pdf"
+//pdfvalue: "/fup/customer/form/2022053115131329259593606625324.pdf"
+pdfvalue: "ibkagrm4.pdf"
 
 },
 {

@@ -265,7 +265,8 @@ function ModalPdf(props) {
 
 const PdfViewer = memo(function (pdfData) {
   return (
-    <Document file={{ url : pdfData.pdfData.pdfvalue, httpHeaders: { 'X-CustomHeader': '40359820958024350238508234' }, withCredentials: true}}>
+    //{{ url : pdfData.pdfData.pdfvalue, httpHeaders: { 'X-CustomHeader': '40359820958024350238508234' }, withCredentials: true}}
+    <Document file={pdfData.pdfData.pdfvalue}>
       <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false}/>
     </Document>
   );
