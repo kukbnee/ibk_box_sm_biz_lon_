@@ -7,6 +7,7 @@ import data from '../../json/judgeStep3Data.js';
 import AlertModal from '../0_common/AlertModal';
 import Footer from '../0_common/Footer';
 import Header from '../0_common/Header';
+import axios from 'axios';
 
 function JudgeStep3() {
   
@@ -120,6 +121,33 @@ function JudgeStep3() {
 
   return (
     <>
+      <input type="button"
+        value="api1"
+        onClick={()=>{
+          axios.get("http://localhost:3000/api1/search?q=title:%22Drosophila%22%20and%20body:%22RNA%22&fl=id,abstract")
+            .then((res)=> {
+              console.log(res.data);
+            })
+        }}
+      />
+      <input type="button"
+        value="api2"
+        onClick={()=>{
+          axios.get("http://localhost:3000/api2/sample-json-file.json")
+            .then((res)=> {
+              console.log(res.data);
+            })
+        }}
+      />
+      <input type="button"
+        value="api3"
+        onClick={()=>{
+          axios.get("http://localhost:3000/api3/fup/customer/form/2017110617593821483973066352935.pdf")
+            .then((res)=> {
+              console.log(res.data);
+            })
+        }}
+      />
       <Header pageId={4} stepCd={1} />
 
       <h2>정보제공동의 [필수] </h2><br />
@@ -216,11 +244,7 @@ function ModalPdf(props) {
     console.log(idx);
     console.log(itemRef.current[6]);
   }
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
+  
   const idx = props.idx;
   let arrData = [];
   //전체동의인지 체크
@@ -264,10 +288,15 @@ function ModalPdf(props) {
 };
 
 const PdfViewer = memo(function (pdfData) {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
   return (
     //{{ url : pdfData.pdfData.pdfvalue, httpHeaders: { 'X-CustomHeader': '40359820958024350238508234' }, withCredentials: true}}
-    <Document file={pdfData.pdfData.pdfvalue}>
-      <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false}/>
+    <Document file={pdfData.pdfData.pdfvalue} onLoadSuccess={onDocumentLoadSuccess}>
+      <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false}/>
     </Document>
   );
 });

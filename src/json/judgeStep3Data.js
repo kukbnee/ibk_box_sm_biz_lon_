@@ -6,8 +6,8 @@ let data = [
   contents: "-고유식별정보 수집.이용.제공.조회.동의\n -개인(신용)정보 수집.이용.제공.조회 동의",
   type : "text",
   agree: "동의",
-  //pdfvalue: "/fup/customer/form/2017110617593821483973066352935.pdf"
-  pdfvalue: "ibkagrm1.pdf"
+  pdfvalue: "https://ibk.co.kr/fup/customer/form/2017110617593821483973066352935.pdf"
+  //pdfvalue: "ibkagrm1.pdf"
 
 },
 {
@@ -35,8 +35,8 @@ title : "필수 개인(신용)정보 수집.이용.제공.조회 동의서[신�
 contents: "-고유식별정보 및 개인(신용)정보수집.이용.제공.조회.동의\n -신용등급 하락가능성 및 고객권리확인 동의",
 type : "text",
 agree: "동의",
-//pdfvalue: "/fup/customer/form/2022053115131329259593606625324.pdf"
-pdfvalue: "ibkagrm4.pdf"
+pdfvalue: "https://ibk.co.kr/fup/customer/form/2022053115131329259593606625324.pdf"
+//pdfvalue: "ibkagrm4.pdf"
 
 },
 {
@@ -54,7 +54,7 @@ title : "공공 마이데이터 관련 개인(신용)정보 조회 동의서",
 contents: "-고유식별정보 수집.이용.제공 동의\n -개인(신용)정보 및 행정정보 제3자 제공 동의",
 type : "text",
 agree: "동의",
-pdfvalue: "/fup/customer/form/2022021612253920263835375609685.pdf"
+pdfvalue: "https://ibk.co.kr/fup/customer/form/2022021612253920263835375609685.pdf"
 
 },
 {
@@ -63,7 +63,7 @@ title : "[선택] 개인(신용)정보 수집.이용 동의서 (빅데이터 기
 contents: "-개인 정보 수집.이용 동의",
 type : "text",
 agree: "동의",
-pdfvalue: "/fup/customer/form/2022060710060229845969269035242.pdf"
+pdfvalue: "https://ibk.co.kr/fup/customer/form/2022060710060229845969269035242.pdf"
 
 },
   
